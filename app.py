@@ -1,5 +1,5 @@
 from flask_cors import CORS
-from flask import Flask, request, jsonify, redirect
+from flask import Flask, request, jsonify, redirect, render_template
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
@@ -80,8 +80,9 @@ def redirect_to_original(short_code):
 from flask import jsonify
 
 @app.route('/')
-def home():
-    return "🎉 Hello!"
+def index():
+    return render_template('index.html')
+
 
 # GET /dashboard-data - Returns all URL entries for the dashboard
 @app.route('/dashboard-data', methods=['GET'])
