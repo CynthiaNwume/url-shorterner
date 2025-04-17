@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+
+# Flask cache files
+instance/
+*.db
+*.sqlite3
+
+# Mac system files
+.DS_Store
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code settings (optional)
+.vscode/
+
+# Logs
+*.log
+
+# Deployment configs (if private)
+render.yaml
