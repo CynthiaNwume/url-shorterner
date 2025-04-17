@@ -79,6 +79,10 @@ def redirect_to_original(short_code):
 
 from flask import jsonify
 
+@app.route('/')
+def home():
+    return "🎉 Hello!"
+
 # GET /dashboard-data - Returns all URL entries for the dashboard
 @app.route('/dashboard-data', methods=['GET'])
 def get_dashboard_data():
