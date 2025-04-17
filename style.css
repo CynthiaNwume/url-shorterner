@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f2f2f2, #e0e7ff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .short-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    word-break: break-word;
+  }
+  
+  .copy-btn {
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .copy-btn:hover {
+    background-color: #059669;
+  }
+  
+  .copied-msg {
+    color: #10b981;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.4s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  .container {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  h1, h2 {
+    color: #1f2937;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="datetime-local"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #6366f1;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    background-color: #4f46e5;
+  }
+  
+  .result {
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .result a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .result a:hover {
+    text-decoration: underline;
+  }
+  
+  .short-url-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .copy-btn {
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #059669;
+  }
+  
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  footer strong {
+    color: #1f2937;
+  }
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    table-layout: fixed; /* Ensures cells have fixed width */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 40%;
+  }
+  
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 20%;
+  }
+  
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+  }
+  
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 30%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 15%;
+    text-align: center;
+  }
+
+  td a {
+    color: #2563eb;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  .secondary-btn {
+    margin-top: 10px;
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #d97706;
+  }
+  .delete-btn {
+    padding: 6px 12px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  

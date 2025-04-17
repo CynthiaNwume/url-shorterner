@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional URL Shortener</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔗 Shorten Your Long URLs</h1>
+
+    <input type="text" id="longUrl" placeholder="Enter your long URL..." />
+    <button onclick="shortenURL()">Shorten URL</button>
+    <br />
+    <a href="dashboard.html">
+    <button class="secondary-btn">📊 Go to Dashboard</button>
+    </a>
+
+
+    <div id="result" class="result"></div>
+
+    <button id="statsBtn" style="display: none;" onclick="checkStats()">Check Stats</button>
+    <div id="stats" class="result"></div>
+  </div>
+
+  <footer>
+    Built with ❤️ by <strong>Cynthia Nwume</strong> using Flask + MongoDB
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
