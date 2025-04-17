@@ -1,0 +1,11 @@
+# render.yaml
+services:
+  - type: web
+    name: url-shortener
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv: //nwume:Ekene2207.@cluster0.hb4rhsj.mongodb.net/urlShortenerDB?retryWrites=true&w=majority&appName=Cluster0
+
